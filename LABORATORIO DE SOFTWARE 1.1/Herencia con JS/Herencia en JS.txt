@@ -1,0 +1,19 @@
+crear...
+
+Clase animal (clase padre)
+
+Atributo1: nombre del animal
+Atributo2: tipo
+Atributo3: voz
+
+
+Método1: presentarse 
+Metodo2: especificar (soy de tipo)
+Metodo3: hablar
+
+
+
+
+Crear dos clases más que hereden de la clase padre
+
+Agregar dos atributos más y dos métodos más (se deben usar también los mismos que tienen la clase padre)
