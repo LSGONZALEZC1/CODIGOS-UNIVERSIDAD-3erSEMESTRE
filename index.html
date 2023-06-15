@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Número random</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <label>Ingrese el tamaño del arreglo: </label
+      ><input type="number" id="number" />
+      <button onclick="addNumbersToArray()">Ingresar</button><br /><br />
+      <br />
+      <p id="tamañoArreglo"></p>
+      <hr>     
+      <h1>Resultado del ordenamiento</h1>
+      <button onclick="mostrarNums()">Mostrar números</button>
+      <p><strong>Sin ordenar: </strong></p>
+      <p id="sortResultQs1"></p>
+      <h2>Quicksort:</h2>
+      <button onclick="calculatePerformance(sortAsc, 'QsSegundos1', 1)">Ordenar de forma Ascendiente</button
+      ><br /><br />
+      <button onclick="calculatePerformance(sortDesc,'QsSegundos2',2)">Ordenar de forma Descendiente</button
+      ><br /><br />
+      <label><b>Ordenamiento de forma ascendente: </b></label>
+      <p id="sortResultQs2"></p>
+      <p id = "QsSegundos1"></p>
+      <label><b>Ordenamiento de forma descendiente: </b></label>
+      <p id="sortResultQs3"></p>
+      <p id = "QsSegundos2"></p>
+      <hr />
+
+      <h2>Burbuja</h2>
+      <button onclick="calculatePerformance(mostrarBurbleAsc,'burbleSeg1',3)">Ordenar de forma ascendente</button>
+      <br /><br />
+      <button onclick="calculatePerformance(mostrarBurbleDsc,'burbleSeg2',4)">Ordenar de forma descendiente</button>
+      <br /><br />
+      <label><b>Ordenamiento de forma ascendente: </b></label>
+      <p id="resultBurble1"></p>
+      <p id="burbleSeg1"></p>
+      <label><b>Ordenamiento de forma descendiente: </b></label>
+      <p id="resultBurble2"></p>
+      <p id="burbleSeg2"></p>
+      <hr />
+
+      <h2>Mergesort</h2>
+      <button onclick="calculatePerformance(mostrarMergeSort,'mergeSeg1',5)">Ordenar de forma ascendente</button>
+      <br /><br />
+      <button onclick="calculatePerformance(mostrarMergeSortDsc,'mergeSeg2',6)">Ordenar de forma descendiente</button>
+      <br /><br />
+      <label><b>Ordenamiento de forma ascendente: </b></label>
+      <p id="resultMerge1"></p>
+      <p id="mergeSeg1"></p>
+      <label><b>Ordenamiento de forma descendiente: </b></label>
+      <p id="resultMerge2"></p>
+      <p id="mergeSeg2"></p>
+      <hr />
+
+      <h2>Selectionsort</h2>
+      <button onclick="calculatePerformance(mostrarSelectionSort,'selecSeg1',7)">Ordenar de forma ascendente</button>
+      <br /><br />
+      <button onclick="calculatePerformance(mostrarSelectionSortDsc,'selecSeg2',8)">Ordenar de forma descendiente</button>
+      <br /><br />
+      <label><b>Ordenamiento de forma ascendente: </b></label>
+      <p id="resultSelec1"></p>
+      <p id="selecSeg1"></p>
+      <label><b>Ordenamiento de forma descendiente: </b></label>
+      <p id="resultSelec2"></p>
+      <p id="selecSeg2"></p>
+      <hr />
+
+      <h2>InsertionSort</h2>
+      <button onclick="calculatePerformance(mostrarInser,'InserSeg1',9)">Ordenar de forma ascendente</button>
+      <br /><br />
+      <button onclick="calculatePerformance(mostrarInserDsc,'InserSeg2',10)">Ordenar de forma descendiente</button>
+      <br /><br />
+      <label><b>Ordenamiento de forma ascendente: </b></label>
+      <p id="resultInser1"></p>
+      <p id="InserSeg1"></p>
+      <label><b>Ordenamiento de forma descendiente: </b></label>
+      <p id="resultInser2"></p>
+      <p id="InserSeg2"></p>
+      <hr />
+
+      <h2>Counting</h2>
+      <button onclick="calculatePerformance(mostrarCounting,'CountingSeg1',11)">Ordenar de forma ascendente</button>
+      <br /><br />
+      <button onclick="calculatePerformance(mostrarCountingDsc,'CountingSeg2',12)">Ordenar de forma descendiente</button>
+      <br /><br />
+      <label><b>Ordenamiento de forma ascendente: </b></label>
+      <p id="resultCounting1"></p>
+      <p id="CountingSeg1"></p>
+      <label><b>Ordenamiento de forma descendiente: </b></label>
+      <p id="resultCounting2"></p>
+      <p id="CountingSeg2"></p>
+      <hr />
+
+      <h2>Burble bidireccional</h2>
+      <button onclick="calculatePerformance(mostrarBurbleBD,'BurbleBDSeg1',13)">Ordenar de forma ascendente</button>
+      <br /><br />
+      <button onclick="calculatePerformance(mostrarBurbleBDDsc,'BurbleBDSeg2',14)">Ordenar de forma descendiente</button>
+      <br /><br />
+      <label><b>Ordenamiento de forma ascendente: </b></label>
+      <p id="resultBurbleBD1"></p>
+      <p id="BurbleBDSeg1"></p>
+      <label><b>Ordenamiento de forma descendiente: </b></label>
+      <p id="resultBurbleBD2"></p>
+      <p id="BurbleBDSeg2"></p>
+      <hr />
+
+      <h2>Radix Sort</h2>
+      <button onclick="calculatePerformance(mostrarRadixSort,'radixSeg1',15)">Ordenar de forma ascendente</button>
+      <br /><br />
+      <button onclick="calculatePerformance(mostrarRadixSortDsc,'radixSeg2',16)">Ordenar de forma descendiente</button>
+      <br /><br />
+      <label><b>Ordenamiento de forma ascendente: </b></label>
+      <p id="resultRadix1"></p>
+      <p id="radixSeg1"></p>
+      <label><b>Ordenamiento de forma descendiente: </b></label>
+      <p id="resultRadixSort2"></p>
+      <p id="radixSeg2"></p>
+      <hr />
+
+      <h2>Gnome</h2>
+      <button onclick="calculatePerformance(mostrarGnomeSort,'gnomeSeg1',17)">Ordenar de forma ascendente</button>
+      <br /><br />
+      <button onclick="calculatePerformance(mostrarGnomeSortdes,'gnomeSeg2',18)">Ordenar de forma descendiente</button>
+      <br /><br />
+      <label><b>Ordenamiento de forma ascendente: </b></label>
+      <p id="resultGnomeSort"></p>
+      <p id="gnomeSeg1"></p>
+      <label><b>Ordenamiento de forma descendiente: </b></label>
+      <p id="resultGnomeSort-1"></p>
+      <p id="gnomeSeg2"></p>
+      <hr />
+      
+      <section class="content">
+        <h1>Graficas</h1>
+        <button onclick="verGrafica()">Ver graficas</button>
+        <canvas id="myChart" height="100" width="300"></canvas>
+    </section>
+
+    <section class="content">
+        <h1><br> </h1>
+        <canvas id="myChart2" height="100" width="300"></canvas>
+    </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.min.js" integrity="sha512-v3ygConQmvH0QehvQa6gSvTE2VdBZ6wkLOlmK7Mcy2mZ0ZF9saNbbk19QeaoTHdWIEiTlWmrwAL4hS8ElnGFbA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./randomNumberSort.js"></script>
+  </body>
+</html>
