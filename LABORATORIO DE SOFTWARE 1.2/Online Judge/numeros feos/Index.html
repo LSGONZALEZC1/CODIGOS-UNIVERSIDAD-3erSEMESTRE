@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Programa de números feos</title>
+  </head>
+  <body>
+    <h1>Programa de números feos</h1>
+    <p>Los números feos son números cuyos únicos factores primos son 2, 3 o 5. La secuencia 1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15,… muestra los primeros 11 números feos. Por convención, 1 está incluido.</p>
+    <p>En este caso desep conocer el numero feo de 1500, el cual es: <span id="resultado"></span></p>
+
+    <script src="Numeros_Feos.js"></script>
+    <script>
+      var resultado = buscarNumeroFeo(1500);
+      document.getElementById("resultado").innerHTML = resultado;
+    </script>
+  </body>
+</html>
