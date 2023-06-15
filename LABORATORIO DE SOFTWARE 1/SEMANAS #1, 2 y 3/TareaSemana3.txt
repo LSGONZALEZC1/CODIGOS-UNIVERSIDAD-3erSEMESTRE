@@ -1,0 +1,5 @@
+Tarea para la Semana 3
+
+1. Hacer dos hojas de estilo diferentes y aplicarlas a la tarea del HTML hecha en la clase pasada.
+2. Hacer el documento XSLT para el documento creado de XML 
+

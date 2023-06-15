@@ -1,0 +1,12 @@
+Tarea HTML
+Les adjunto el trabajo hecho en los dos cursos de Laboratorio, no pueden incluir dentro de los 30 elementos los que están en estos dos archivos 
+Por favor los numeran usando comentarios, les recomiendo hacer mas de 30 para tener respaldo <!-- numeración -->
+Detalles importantes:
+•	El archivo Ejemplo2 tiene un enlace al archivo 1
+•	El archivo Ejemplo tiene botones
+•	El archivo Ejemplo tiene video 
+•	El archivo Ejemplo tiene una imagen de internet 
+
+•	El archivo Ejemplo tiene imagen que se encuentra en la carpeta images 
+
+•	El archivo Ejemplo tiene imagen que está al lado del archivo (no en images)

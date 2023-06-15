@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <!-- <CLASES CSS> -->
+
+            <!-- #1 -->
+            <style>
+                #grad1 {
+                  height: 200px;
+                  background-color: red; /* For browsers that do not support gradients */
+                  background-image: linear-gradient(to bottom right, red, yellow);
+                }
+            </style>
+
+            <!-- #2 -->
+            <style>
+                body {
+                    color: rgb(255, 255, 255);
+                }
+            </style>
+
+            <!-- #3 -->
+            <style>
+                h2 {
+                    width: 160px;
+                    height: 50px;
+                    background-color: rgb(0, 0, 0);
+                    border: 5px solid rgb(58, 215, 100);
+                }
+                
+                h2 {
+                  transform: rotateX(150deg);
+                }
+            </style>
+
+            <!-- #4 -->
+            <style>
+                img {
+                  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+                }
+            </style>
+
+            <!-- #5 -->
+            <style>
+                .mask1 {
+                  -webkit-mask-image: url(w3logo.png);
+                  mask-image: url(w3logo.png);
+                  -webkit-mask-repeat: no-repeat;
+                  mask-repeat: no-repeat;    
+                }
+            </style>
+
+            <!-- #6 -->
+            <style>
+                h1, h2 {
+                  color: white;
+                  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+                }
+                </style>
+
+        <!-- </CLASES CSS> -->
+        <title>Punto #1</title>
+    </head>
+
+    <body>
+
+        <div id="grad1"></div>
+        <p>
+
+        <!-- #1 -->
+        <!-- color de fondo de la pagina -->
+        <body style="background-color: rgb(153, 121, 235);"></body>
+
+        <!-- #2 -->
+        <!-- seleccionar fecha y hora -->
+        <input type="date">
+        <input type="time">
+
+        <!-- #4, 5, 6 y 7-->
+        <!-- elemetno <figcaption> dentro de elemto <figure> -->
+        <!-- elemento <u> es una anotacion no textual -->
+        <!-- elemto <mark> para resaltar lineas -->
+        <hr>
+        <h2><u>Cometa Verde</u></h2>
+        <figure style="float: right">
+            <img src="https://www.laregion.es/asset/thumbnail,1280,720,center,center/media/laregion/images/2023/02/01/2023020118584510533.jpg" alt="imagen de wikipedia" width="200">
+            <figcaption><mark>01/FEB./23</mark></figcaption>
+        </figure>
+        <p>Un extraño cometa que irradia una luz verde fue visible desde la Tierra por primera vez en 50.000 años. Es denominado Comet C/2022 E3 (ZTF) y pasó a 42 millones de kilómetros.</p>
+        <p>El Cometa Verde se puede apreciar mirando al noroeste, la trayectoria que sigue del espacio entre la Estrella Polar y la copa de la Osa Mayor. En las horas de la mañana, será cuando tendrá la mejor vista a medida que la Luna está en cuarto creciente.</p>
+
+        <!-- #8 -->
+        <!-- elemento <b> de bold=negrita -->
+        <p>Vaya que este fenómeno astronómico causó emoción en las personas, sin embargo, hay más detalles entorno a él que son poco conocidos, como <b>la curiosa conexion que tiene el cometa verde y Tinker Bell</b> en donde la historia hace mención de la aparición de un cometa verde, el cual desencadena la aparición de Gruff</p>
+
+        <!-- #9 y 10 -->
+        <!-- <audio controls> y <source> -->
+        <hr>
+        <audio controls>
+            <source src="canción_del _cometa _verde.mp3" type="audio/mp3">
+
+        </audio>
+
+        <!-- 11, 12, 13, 14 y 15 -->
+        <!-- <form>, <label>, <input>, <fieldset> y <legend> -->
+        <hr>
+        <form action="../../form-result.php" method="post" target="_blank">
+            <fieldset>
+                <legend>Información de Contacto</legend>
+                <p><label>Nombre completo: <input type="text" name="nombrecompleto"></label></p>
+                
+                <p>Género:
+                    <label><input type="radio" name="genero" > Masculino</label>
+                    <label><input type="radio" name="genero" > Femenino</label>
+                </p>
+          
+                <p><label>Dirección: <input type="text" name="direccion"></label></p>
+          
+                <p>Intereses:
+                    <label><input type="checkbox" name="libros"> Libros</label>
+                    <label><input type="checkbox" name="peliculas"> Películas</label>
+                    <label><input type="checkbox" name="videojuegos"> Videojuegos</label>
+                </p>
+            </fieldset>  
+            <p><input type="submit" value="Enviar datos"> <input type="reset" value="Restaurar formulario"></p> 
+        </form>
+
+        <!-- 16 y 17 -->
+        <!-- <details> y <summary> -->
+
+        <details>
+
+            <summary>Opciones extra</summary>
+            <p><input type="checkbox" name="enviar ofertas" checked> Enviar ofertas y promociones a mi dirección de e-mail.</p>
+            
+        </details>
+
+        <!-- 18 -->
+        <!-- <progress> -->
+        <p>Procesando Información <progress></progress></p>
+
+        <!-- 19 -->
+        <!-- <optgroup> -->
+        <hr>
+        <p>Elije una estatuilla:         
+            <select>    
+
+                <optgroup label="África">
+                    <option>Elefante</option>       
+                    <option>Jirafa</option>
+                    <option>Cebra</option>
+                <option>León</option>
+                </optgroup>
+                
+                <optgroup label="Oceanía" >
+                    <option>Demonio de Tasmania</option>
+                    <option>Koala</option>
+                    <option>Canguro</option>
+              </optgroup>
+
+            </select>  
+        </p>
+
+        <!-- 20 y 21 -->
+        <!-- <var> y <sup> -->
+        <hr>
+        <p>Será un momento clave en la historia, como cuando Albert Einstein presentó su fórmula <var>E</var>=<var>m</var><var>c</var><sup>2</sup>.</p>
+
+        <!-- 22 -->
+        <!-- <sub> -->
+        <p>El consumir mucha <var>C<sub>11</sub>H<sub>22</sub>O<sub>11</sub></var> (azucar) nos hace un gran daño a nuestro cuerpo.</p>
+        
+        <!-- 23 -->
+        <!-- <address> -->
+        <hr>
+        <address>
+            Laura Gonzalez<br>
+            <a href="mailto:laura0518@example.com">laura0518@example.com</a><br>
+            107 Springtime Boulevard<br>
+            Mountain View, CA<br>
+            +256 4481-546585 
+        </address>
+
+        <!-- 24 -->
+        <!-- <s> -->
+        <hr>
+        <p><s>CONOCE PARA DISFRUTAR</s></p>
+
+        <!-- 25 -->
+        <!-- <span> -->
+        <hr>
+        <h1>Pintando el arcoíris</h1>
+        <p>El arcoiris lleva los siguientes colores: <span style="color: #ed1b24">rojo</span>, 
+        <span style="color: #d9cc00">amarillo</span>, <span style="color: #00a3e8">azul</span>, 
+        <span style="color: #a349a3">violeta</span>, <span style="color: #ff7f26">naranja</span>, 
+        <span style="color: #a1cc1b">verde</span> e <span style="color: #5701ae">índigo</span>.</p>
+
+        <!-- 26, 27 y 28 -->
+        <!-- <dl>, <dt> y <dd> -->
+        <hr>
+        <dl>
+            <dt>¿Puede un niño tener trastorno por déficit de atención y no hiperactividad?</dt>
+              <dd>Sí. Esto se conoce como TDAH, predominantemente inatento. Los niños con esta clasificación normalmente soñarán despiertos y tendrán grandes dificultades para concentrarse.</dd>
+            <dt>¿Existe alguna prueba específica para diagnosticar TDAH?</dt>
+              <dd>No, no existe un test mágico. Pero los profesionales calificados en asistir la conducta y el desarrollo de los niños conducirán un estudio completo con el fin de determinar si el individio tiene el desorden.</dd>
+        </dl>
+
+        <!-- 29 -->
+        <!-- <em> -->
+        <hr>
+        <p>Amo los <em>dias</em> lluviosos.</p>
+        <p>Amo los dias <em>lluviosos</em>.</p>    
+        <p><em>No me gustan</em> los dias soleados.</p>  
+        <p><em>¡Amo los dias lluviosos!</em></p>
+
+        <!-- 30 -->
+        <!-- <small> -->
+        <hr>
+        <p>Merida de valiente nos enseño que...</p>
+        <p><small>No nacemos para ser lo que los demas quieren que seamos, nacemos para ser lo que nosotros queremos.</small></p>
+     
+    </body>
+</html>

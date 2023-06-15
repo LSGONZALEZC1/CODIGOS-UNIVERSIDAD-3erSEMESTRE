@@ -1,0 +1,11 @@
+Tarea para la semana 4
+1.	Ponerse al día con las tareas anteriores (serán penalizados por entrega tardía, pero eso es mejor que 0.0)
+2.	Hacer un página usando en HTML, CSS y JavaScript donde usen como entrada y salida de datos vistas en clase (innerHTML, alert, write y console). Deben crear 10 funciones complejas (mas complejas que el factorial, al menos 2 recursivas y al menos 2  con cadenas de texto)  y usar entrada de texto, botones, y toso lo que necesitan para pedir y para mostrar el resultado. 
+3.	Adicionalmente, deben mostrar el código (ver texto de abajo) usando el operados para invocar la función. 
+4.	 Repasar los operadores (asignación, lógicos, comparación), las instrucciones de repetición y control (if...)
+_____________________________________
+The () Operator Invokes the Function
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+}
+document.getElementById("demo").innerHTML = toCelsius;
